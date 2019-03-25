@@ -8,11 +8,11 @@ terragrunt = {
             #when an account gets changed unexpectedly.
             #this bucket name is hardcoded downstream in the environment.tfvars
             #which gets included through extra_arguments calls
-            bucket = "cinegyexample-terraform-state-${get_aws_account_id()}"
+            bucket = "cinegydemo-terraform-state-${get_aws_account_id()}"
             
             key = "${path_relative_to_include()}/terraform.tfstate"
             region = "eu-west-1"
-            dynamodb_table = "cinegyexample-terragrunt-lock-table"
+            dynamodb_table = "cinegydemo-terragrunt-lock-table"
             profile = "terragrunt"
 
             s3_bucket_tags {
