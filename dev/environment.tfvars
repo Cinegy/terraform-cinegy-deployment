@@ -3,6 +3,8 @@ app_name="Cinegy-Demo"
 environment_name="dev"
 
 #these values are used when locking to the remote state bucket when sharing outputs between modules
+aws_account_id = "824173187332"
+dynamodb_table = "cinegydemo-terragrunt-lock-table"
 state_bucket = "cinegydemo-terraform-state-824173187332"
 state_region = "eu-west-1"
 aws_region = "eu-west-1"

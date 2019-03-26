@@ -7,7 +7,7 @@ terragrunt = {
   } 
   
   terraform {
-    source = "git::https://github.com/Cinegy/terraform-cinegy-modules.git//basevm-win-cinagent?ref=v0.0.1"
+    source = "git::https://github.com/Cinegy/terraform-cinegy-modules.git//basevm-win?ref=v0.0.4"
   }
 }
 
